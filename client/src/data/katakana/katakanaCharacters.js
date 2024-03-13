@@ -1,7 +1,4 @@
-// array of objects of frequently used katakana characters and romaji
-// empty strings are used to fill in the gaps in the grid
-const katakanaData = {
-  // 5 columns
+const katakanaCharacters = {
   basic: [
     { character: 'ア', romaji: 'a' },
     { character: 'イ', romaji: 'i' },
@@ -59,7 +56,6 @@ const katakanaData = {
     { character: '', romaji: '' },
     { character: '', romaji: '' },
   ],
-  // 5 columns
   diacritics: [
     { character: 'ガ', romaji: 'ga' },
     { character: 'ギ', romaji: 'gi' },
@@ -87,7 +83,6 @@ const katakanaData = {
     { character: 'ペ', romaji: 'pe' },
     { character: 'ポ', romaji: 'po' },
   ],
-  // 3 columns
   contracted: [
     { character: 'キャ', romaji: 'kya' },
     { character: 'キュ', romaji: 'kyu' },
@@ -123,21 +118,6 @@ const katakanaData = {
     { character: 'ピュ', romaji: 'pyu' },
     { character: 'ピョ', romaji: 'pyo' },
   ],
-  // 4 columns
-  doubleConsonants: [
-    { character: 'ッ+k', romaji: 'kk' },
-    { character: 'ッ+s', romaji: 'ss' },
-    { character: 'ッ+t', romaji: 'tt' },
-    { character: 'ッ+p', romaji: 'pp' },
-  ],
-  // 5 columns
-  longVowels: [
-    { character: 'アー', romaji: 'aa' },
-    { character: 'イー', romaji: 'ii' },
-    { character: 'ウー', romaji: 'uu' },
-    { character: 'エー', romaji: 'ee' },
-    { character: 'オー', romaji: 'oo' },
-  ],
 };
 
-export default katakanaData;
+export default katakanaCharacters;

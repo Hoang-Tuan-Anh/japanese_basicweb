@@ -1,4 +1,4 @@
-import Home from './Home';
+import Landing from './Landing';
 import Login from './Login';
 import Signup from './Signup';
 import NoMatch from './NoMatch';
@@ -9,4 +9,4 @@ import Profile from './Profile';
 import QuizPage from './QuizPage';
 import CompleteScreen from './CompleteScreen';
 
-export { Home, Login, Signup, NoMatch, Dashboard, Characters, Leaderboards, Profile, QuizPage, CompleteScreen };
+export { Landing, Login, Signup, NoMatch, Dashboard, Characters, Leaderboards, Profile, QuizPage, CompleteScreen };

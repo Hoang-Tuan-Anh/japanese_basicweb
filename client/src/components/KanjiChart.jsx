@@ -1,14 +1,13 @@
 import React from 'react';
-import { kanjiData } from '../data';
+import { kanjiCharacters } from '../data';
 import KanjiLesson from './KanjiLesson';
 
 const KanjiChart = () => {
   return (
     <section id="kanjiChart">
       <h3 className="font-bold mb-4 text-xl">Kanji Chart</h3>
-      {/* Kanji Lessons */}
       <div className="flex flex-col gap-4">
-        {kanjiData.map((lesson) => (
+        {kanjiCharacters.map((lesson) => (
           <KanjiLesson
             key={lesson.url}
             data={lesson}

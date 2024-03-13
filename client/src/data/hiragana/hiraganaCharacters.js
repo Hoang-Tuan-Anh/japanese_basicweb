@@ -1,7 +1,4 @@
-// array of objects of frequently used hiragana characters and romaji
-// empty strings are used to fill in the gaps in the grid
-const hiraganaData = {
-  // 5 columns
+const hiraganaCharacters = {
   basic: [
     { character: 'あ', romaji: 'a' },
     { character: 'い', romaji: 'i' },
@@ -59,7 +56,6 @@ const hiraganaData = {
     { character: '', romaji: '' },
     { character: '', romaji: '' },
   ],
-  // 5 columns
   diacritics: [
     { character: 'が', romaji: 'ga' },
     { character: 'ぎ', romaji: 'gi' },
@@ -87,7 +83,6 @@ const hiraganaData = {
     { character: 'ぺ', romaji: 'pe' },
     { character: 'ぽ', romaji: 'po' },
   ],
-  // 3 columns
   contracted: [
     { character: 'きゃ', romaji: 'kya' },
     { character: 'きゅ', romaji: 'kyu' },
@@ -123,26 +118,6 @@ const hiraganaData = {
     { character: 'ぴゅ', romaji: 'pyu' },
     { character: 'ぴょ', romaji: 'pyo' },
   ],
-  // 4 columns
-  doubleConsonants: [
-    { character: 'っ+k', romaji: 'kk' },
-    { character: 'っ+s', romaji: 'ss' },
-    { character: 'っ+t', romaji: 'tt' },
-    { character: 'っ+p', romaji: 'pp' },
-  ],
-  // 5 columns
-  longVowels: [
-    { character: 'ああ', romaji: 'aa' },
-    { character: 'いい', romaji: 'ii' },
-    { character: 'うう', romaji: 'uu' },
-    { character: 'ええ', romaji: 'ee' },
-    { character: 'おお', romaji: 'oo' },
-    { character: '', romaji: '' },
-    { character: '', romaji: '' },
-    { character: '', romaji: '' },
-    { character: 'えい', romaji: 'ei' },
-    { character: 'おう', romaji: 'ou' },
-  ],
 };
 
-export default hiraganaData;
+export default hiraganaCharacters;

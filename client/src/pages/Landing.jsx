@@ -3,7 +3,7 @@ import { Link, Navigate } from 'react-router-dom';
 import countryLogo from '../assets/JapanCountryLogo.png';
 import Auth from '../utils/auth';
 
-const Home = () => {
+const Landing = () => {
   const loggedIn = Auth.loggedIn();
   if (loggedIn) {
     return <Navigate to="/dashboard" />;
@@ -54,4 +54,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Landing;

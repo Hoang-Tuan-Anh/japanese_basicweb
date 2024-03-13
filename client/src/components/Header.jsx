@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 // import darkmode action
 import { TOGGLE_DARKMODE } from '../features/darkMode/darkModeSlice';
 
-import logo from '../assets/SakuraStudyLogo.svg';
+import logo from '../assets/AENihongoLogo.svg';
 import logoText from '../assets/SakuraStudyTextBlack.svg';
 import logoTextDarkMode from '../assets/SakuraStudyTextWhite.svg';
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';

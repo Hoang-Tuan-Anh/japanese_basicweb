@@ -7,8 +7,8 @@ const LessonContainer = ({ lesson }) => {
       <div className="relative z-10 p-4">
         {/* Header */}
         <div className="mb-4">
-          <p className="font-bold tracking-wider uppercase opacity-80 text-shadow">
-            Lesson {lesson.lessonNumber}
+          <p className="font-bold opacity-80 uppercase tracking-wider text-shadow">
+            Bài {lesson.lessonNumber}
           </p>
           <h4 className="text-2xl font-bold sm:text-3xl md:text-4xl text-shadow">{lesson.lessonTitle}</h4>
           <p className="font-bold tracking-wider opacity-80 text-shadow">{lesson.lessonPages}</p>

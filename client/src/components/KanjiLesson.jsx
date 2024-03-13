@@ -11,7 +11,7 @@ const KanjiLesson = ({ data }) => {
         {/* Header */}
         <div className="text-gray-100">
           {/* Lesson Number and Pages*/}
-          <p className="font-bold opacity-80 uppercase tracking-wider text-shadow">Lesson {data.lessonNumber}</p>
+          <p className="font-bold opacity-80 uppercase tracking-wider text-shadow">Bài {data.lessonNumber}</p>
           <div className="flex flex-col sm:flex-row justify-between">
             {/* Subject Title */}
             <div>
@@ -24,7 +24,7 @@ const KanjiLesson = ({ data }) => {
                 to={`/quiz/kanji/${data.url}`}
                 className="w-full h-fit sm:w-32 p-2 sm:px-4 border-2 border-white bg-white hover:bg-gray-200 hover:border-gray-200 text-gray-800 rounded-xl flex items-center justify-center"
               >
-                Start Quiz
+                Làm Quiz
               </Link>
 
               {/* Display Table Button */}
@@ -32,7 +32,7 @@ const KanjiLesson = ({ data }) => {
                 className="w-full h-fit sm:w-32 p-2 sm:px-4 border-2 border-gray-100 bg-gray-800/30 hover:bg-gray-800/50 backdrop-blur-sm text-shadow rounded-xl"
                 onClick={() => setDisplayTable(!displayTable)}
               >
-                {displayTable ? 'Hide Table' : 'Show Table'}
+                {displayTable ? 'Ản Kanji' : 'Hiện Kanji'}
               </button>
             </div>
           </div>
