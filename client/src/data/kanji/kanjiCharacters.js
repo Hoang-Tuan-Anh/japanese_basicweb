@@ -1,11 +1,9 @@
-// array of objects of kanji characters grouped by subject
-// includes on-yomii and kun-yomi readings
-const kanjiData = [
+const kanjiCharacters = [
   {
     lessonNumber: 3,
-    lessonPages: 'Genki I: p.304-307',
+    lessonPages: 'Genki quyển I: trang 304-307',
     url: 'lesson-3',
-    title: 'Daily Life',
+    title: 'Cuộc sống thường nhật',
     backgroundColor: 'bg-gradient-to-r from-blue-600 to-blue-500',
     backgroundImage: 'bg-curtain',
     kanji: [
@@ -13,91 +11,91 @@ const kanjiData = [
         character: '一',
         readings: 'いち',
         romaji: 'ichi',
-        meanings: 'one',
+        meanings: 'một',
       },
       {
         character: '二',
         readings: 'に',
         romaji: 'ni',
-        meanings: 'two',
+        meanings: 'hai',
       },
       {
         character: '三',
         readings: 'さん',
         romaji: 'san',
-        meanings: 'three',
+        meanings: 'ba',
       },
       {
         character: '四',
         readings: 'し, よん',
         romaji: 'yon',
-        meanings: 'four',
+        meanings: 'bốn',
       },
       {
         character: '五',
         readings: 'ご',
         romaji: 'go',
-        meanings: 'five',
+        meanings: 'năm',
       },
       {
         character: '六',
         readings: 'ろく',
         romaji: 'roku',
-        meanings: 'six',
+        meanings: 'sáu',
       },
       {
         character: '七',
         readings: 'しち, なな',
         romaji: 'shichi, nana',
-        meanings: 'seven',
+        meanings: 'bảy',
       },
       {
         character: '八',
         readings: 'はち',
         romaji: 'hachi',
-        meanings: 'eight',
+        meanings: 'tám',
       },
       {
         character: '九',
         readings: 'きゅう',
         romaji: 'kyuu',
-        meanings: 'nine',
+        meanings: 'chín',
       },
       {
         character: '十',
         readings: 'じゅう',
         romaji: 'juu',
-        meanings: 'ten',
+        meanings: 'mười',
       },
       {
         character: '百',
         readings: 'ひゃく',
         romaji: 'hyaku',
-        meanings: 'hundred',
+        meanings: 'trăm',
       },
       {
         character: '千',
         readings: 'せん, ぜん',
         romaji: 'sen, zen',
-        meanings: 'thousand',
+        meanings: 'nghìn',
       },
       {
         character: '万',
         readings: 'まん',
         romaji: 'man',
-        meanings: 'ten thousand',
+        meanings: 'vạn',
       },
       {
         character: '円',
         readings: 'えん',
         romaji: 'en',
-        meanings: 'yen, circle',
+        meanings: 'yên',
       },
       {
         character: '時',
         readings: 'じ, とき',
         romaji: 'ji, toki',
-        meanings: 'time, moment',
+        meanings: 'giờ, thời',
       },
     ],
   },
@@ -973,4 +971,4 @@ const kanjiData = [
   },
 ];
 
-export default kanjiData;
+export default kanjiCharacters;

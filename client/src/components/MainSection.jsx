@@ -3,11 +3,11 @@ import { useEffect } from 'react';
 import { Header, Footer, Sidebar, MobileMenu } from '.';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
-import { Home, Login, Signup, NoMatch, Dashboard, Characters, Leaderboards, Profile, QuizPage } from '../pages';
+import { Landing, Login, Signup, NoMatch, Dashboard, Characters, Leaderboards, Profile, QuizPage } from '../pages';
 
 import Auth from '../utils/auth';
 import { HiraKataKanjiQuiz, VocabQuiz } from '../utils/quizGenerator';
-import { hiraganaData, katakanaData, kanjiData, lessonData } from '../data';
+import { hiraganaCharacters, katakanaCharacters, kanjiCharacters, lessonData } from '../data';
 
 const MainSection = () => {
   const loggedIn = Auth.loggedIn();
@@ -34,7 +34,7 @@ const MainSection = () => {
           <Routes>
             <Route
               path="/"
-              element={<Home />}
+              element={<Landing />}
             />
             <Route
               path="/login"
@@ -68,9 +68,9 @@ const MainSection = () => {
                     quiz={
                       new HiraKataKanjiQuiz(
                         'hiragana',
-                        hiraganaData.basic,
-                        hiraganaData.diacritics,
-                        hiraganaData.contracted
+                        hiraganaCharacters.basic,
+                        hiraganaCharacters.diacritics,
+                        hiraganaCharacters.contracted
                       )
                     }
                   />
@@ -83,16 +83,16 @@ const MainSection = () => {
                     quiz={
                       new HiraKataKanjiQuiz(
                         'katakana',
-                        katakanaData.basic,
-                        katakanaData.diacritics,
-                        katakanaData.contracted
+                        katakanaCharacters.basic,
+                        katakanaCharacters.diacritics,
+                        katakanaCharacters.contracted
                       )
                     }
                   />
                 }
               />
               <Route path="kanji">
-                {kanjiData.map((lesson) => (
+                {kanjiCharacters.map((lesson) => (
                   <Route
                     key={lesson.url}
                     path={lesson.url}
