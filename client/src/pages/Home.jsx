@@ -15,30 +15,31 @@ const Home = () => {
       id="hero"
       className="w-full min-h-[calc(100vh-72px)] py-14 hero-bg"
     >
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div className="flex flex-col items-center justify-between gap-8 px-4 mx-auto max-w-7xl lg:px-8 lg:flex-row">
         {/* Call to Action */}
-        <div className="flex flex-col items-center lg:items-start font-bold text-center lg:text-left gap-8 order-last lg:order-first">
-          <h1 className="text-xl md:text-2xl lg:text-3xl uppercase">
-            The Best Way To Study <br />
-            <span className="text-primary text-5xl md:text-6xl lg:text-7xl">Japanese</span>
+        <div className="flex flex-col items-center order-last gap-8 font-bold text-center lg:items-start lg:text-left lg:order-first">
+          <h1 className="text-xl uppercase md:text-2xl lg:text-3xl">
+            Lựa chọn hàng đầu cho việc học <br /> <br />
+            
+            <span className="text-5xl text-primary md:text-6xl lg:text-7xl">Tiếng Nhật</span>
           </h1>
-          <p className="max-w-md md:text-xl text-gray-500 dark:text-gray-400">
-            Practice Japanese vocabulary and phrases with our engaging lessons and quizzes.
+          <p className="max-w-md text-gray-500 md:text-xl dark:text-gray-400">
+            Làm quen với từ và cụm từ tiếng Nhật thông qua các bài học hấp dẫn của chúng tôi.
           </p>
-          <div className="w-72 flex flex-col text-center gap-4">
+          <div className="flex flex-col gap-4 text-center w-72">
             {/* Sign Up Button */}
             <Link
               to="/signup"
-              className="py-3 px-3 text-white bg-primary hover:bg-primary-shade rounded-xl shadow-xl"
+              className="px-3 py-3 text-white shadow-xl bg-primary hover:bg-primary-shade rounded-xl"
             >
-              Start learning
+              Bắt đầu khóa học
             </Link>
             {/* Login Button */}
             <Link
               to="/login"
-              className="py-3 px-3 text-primary dark:text-gray-300 border-2 border-primary dark:border-gray-300 bg-white dark:bg-slate-900 dark:hover:bg-gray-100/10 hover:bg-gray-300 rounded-xl shadow-xl"
+              className="px-3 py-3 bg-white border-2 shadow-xl text-primary dark:text-gray-300 border-primary dark:border-gray-300 dark:bg-slate-900 dark:hover:bg-gray-100/10 hover:bg-gray-300 rounded-xl"
             >
-              Already have an account?
+              Đã có tài khoản ?
             </Link>
           </div>
         </div>

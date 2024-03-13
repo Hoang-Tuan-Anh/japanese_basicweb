@@ -23,25 +23,25 @@ const Dashboard = () => {
       id="dashboard"
       className="w-full min-h-screen p-4 md:p-8"
     >
-      <h1 className="h1-style mb-8">Dashboard</h1>
+      <h1 className="mb-8 h1-style">Trang chủ</h1>
       {/* Banner */}
-      <div className="mb-8 banner-container-style text-white text-shadow bg-gradient-to-r from-blue-600 to-blue-800">
-        <div className="relative p-8 z-10">
-          <h2 className="banner-heading mb-3">Welcome {user.username}!</h2>
-          <p className="text-lg">Your adventure begins here</p>
+      <div className="mb-8 text-white banner-container-style text-shadow bg-gradient-to-r from-teal-400 to-teal-600">
+        <div className="relative z-10 p-8">
+          <h2 className="mb-3 banner-heading">Chào mừng {user.username}!</h2>
+          <p className="text-lg">học đi đmm</p>
         </div>
         <div className="banner-bg-style bg-parkay-floor" />
       </div>
       <div className="mb-8">
         <p>
-          These quizzes are intended to aid you in practicing the material you've learned in each lesson of{' '}
+        Những bài học và quiz nhằm mục đích hỗ trợ bạn luyện tập những kiến ​​thức đã học trong mỗi bài học của giáo trình{' '}
           <strong>Genki: An Integrated Course in Elementary Japanese textbooks (Third Edition)</strong>.
         </p>
         <br />
-        <p>Select an exercise from a lesson to begin a quiz.</p>
+        <p>Chọn một bài học để bắt đầu kiểm tra.</p>
       </div>
 
-      <h3 className="font-bold mb-4 text-xl">Lessons</h3>
+      <h3 className="mb-4 text-xl font-bold">Lessons</h3>
       {/* Lessons */}
       <div className="flex flex-col gap-4">
         {lessonData.map((lesson) => (

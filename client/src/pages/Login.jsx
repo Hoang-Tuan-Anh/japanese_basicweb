@@ -66,9 +66,9 @@ const Login = () => {
           alt="Sakura Study Logo"
           className="w-12 h-12 mx-auto mb-2"
         />
-        <h1 className="text-2xl font-bold mb-6 text-center">Log in</h1>
+        <h1 className="mb-6 text-2xl font-bold text-center">Đăng nhập</h1>
         {/* Fields Container */}
-        <div className="w-full flex flex-col gap-4">
+        <div className="flex flex-col w-full gap-4">
           {/* Email Field Wrapper*/}
           <div className="flex flex-col gap-1">
             <label
@@ -78,7 +78,7 @@ const Login = () => {
               Email
             </label>
             <input
-              className="form-input-style px-3 py-2"
+              className="px-3 py-2 form-input-style"
               type="email"
               id="email"
               name="email"
@@ -91,7 +91,7 @@ const Login = () => {
               className="font-bold"
               htmlFor="password"
             >
-              Password
+              Mật khẩu
             </label>
             <div className="relative">
               <input
@@ -116,7 +116,7 @@ const Login = () => {
 
         {/* Error Message */}
         {error && (
-          <p className="text-red-500 mt-6 inline-flex items-center text-sm sm:text-base">
+          <p className="inline-flex items-center mt-6 text-sm text-red-500 sm:text-base">
             <FaExclamationCircle className="mr-1" />
             {errorMessage}
           </p>
@@ -124,19 +124,19 @@ const Login = () => {
 
         {/* Submit Button */}
         <button
-          className="w-full mt-6 py-3 px-6 bg-primary hover:bg-primary-shade text-white font-bold rounded-xl"
+          className="w-full px-6 py-3 mt-6 font-bold text-white bg-primary hover:bg-primary-shade rounded-xl"
           type="submit"
         >
-          {loading ? <AiOutlineLoading className="animate-spin h-6 w-6 mx-auto" /> : 'Log in'}
+          {loading ? <AiOutlineLoading className="w-6 h-6 mx-auto animate-spin" /> : 'Đăng nhập'}
         </button>
         {/* Sign Up Link */}
-        <p className="mt-6 text-gray-500 dark:text-gray-400 text-center">
-          Don't have an account?{' '}
+        <p className="mt-6 text-center text-gray-500 dark:text-gray-400">
+          Chưa có tài khoản ?{' '}
           <Link
             to="/signup"
             className="font-bold text-primary hover:text-primary-shade hover:underline"
           >
-            Sign up
+            Đăng ký
           </Link>
         </p>
       </form>

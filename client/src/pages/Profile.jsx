@@ -25,12 +25,12 @@ const Profile = () => {
       className="w-full min-h-screen p-4 md:p-8"
     >
       {/* Page Heading */}
-      <h1 className="h1-style mb-8">Profile</h1>
+      <h1 className="mb-8 h1-style">Trang cá nhân</h1>
       {/* Loading Spinner */}
-      {loading && <AiOutlineLoading className="animate-spin h-12 w-12 mx-auto" />}
+      {loading && <AiOutlineLoading className="w-12 h-12 mx-auto animate-spin" />}
       {/* Profile Info */}
-      <div className="box-container-style mb-8 flex flex-col sm:flex-row items-center gap-4">
-        <div className="w-32 h-32 bg-primary rounded-full flex justify-center items-center uppercase font-bold text-6xl text-white">
+      <div className="flex flex-col items-center gap-4 mb-8 box-container-style sm:flex-row">
+        <div className="flex items-center justify-center w-32 h-32 text-6xl font-bold text-white uppercase rounded-full bg-primary">
           {firstLetter}
         </div>
         <div className="flex flex-col gap-2 text-center sm:text-left">
@@ -39,8 +39,8 @@ const Profile = () => {
         </div>
       </div>
       {/* Profile Statistics */}
-      <div className="box-container-style mb-8 flex flex-col gap-4">
-        <h3 className="text-xl font-bold">Statistics</h3>
+      <div className="flex flex-col gap-4 mb-8 box-container-style">
+        <h3 className="text-xl font-bold">Thống kê</h3>
         <div>
           <h4 className="text-gray-500 dark:text-gray-400">Total XP:</h4>
           <h2 className="text-2xl font-bold">{user.experience}</h2>

@@ -31,11 +31,11 @@ const Characters = () => {
     >
       <div className="mb-8">
         {/* Page Heading */}
-        <h1 className="h1-style mb-8">Characters</h1>
+        <h1 className="mb-8 h1-style">Bảng chữ cái</h1>
 
         {/* Tabs */}
-        <div className="mb-8 border-b-2 border-b-gray-300 dark:border-gray-700 flex justify-center sm:justify-start">
-          <div className="w-full sm:max-w-md grid grid-cols-3 font-bold sm:text-lg text-center">
+        <div className="flex justify-center mb-8 border-b-2 border-b-gray-300 dark:border-gray-700 sm:justify-start">
+          <div className="grid w-full grid-cols-3 font-bold text-center sm:max-w-md sm:text-lg">
             {tabs.map((tab) => (
               <button
                 key={`id-${tab}`}
@@ -50,9 +50,9 @@ const Characters = () => {
         </div>
 
         {/* Banner */}
-        <div className="banner-container-style text-white text-shadow bg-gradient-to-r from-primary to-red-800">
-          <div className="relative p-8 z-10">
-            <h2 className="banner-heading mb-3">Let's learn {activeTab}!</h2>
+        <div className="text-white banner-container-style text-shadow bg-gradient-to-r from-teal-400 to-teal-600">
+          <div className="relative z-10 p-8">
+            <h2 className="mb-3 banner-heading">Let's learn {activeTab}!</h2>
             <p className="text-lg">{charBannerText[activeTab]}</p>
           </div>
           <div className="banner-bg-style bg-clouds" />
@@ -63,10 +63,10 @@ const Characters = () => {
       <div>
         {/* Start Quiz Button for Hiragana and Katakana */}
         {(activeTab === 'Hiragana' || activeTab === 'Katakana') && (
-          <div className="mb-8 flex justify-center sm:justify-start">
+          <div className="flex justify-center mb-8 sm:justify-start">
             <Link
               to={`/quiz/${activeTab.toLowerCase()}`}
-              className="w-full sm:w-fit px-8 py-4 font-bold text-lg text-center text-white dark:text-slate-800 bg-blue-500 hover:bg-blue-600 dark:bg-sky-400 dark:hover:bg-sky-500 rounded-xl"
+              className="w-full px-8 py-4 text-lg font-bold text-center text-white bg-blue-500 sm:w-fit dark:text-slate-800 hover:bg-blue-600 dark:bg-sky-400 dark:hover:bg-sky-500 rounded-xl"
             >
               Start {activeTab} Quiz
             </Link>

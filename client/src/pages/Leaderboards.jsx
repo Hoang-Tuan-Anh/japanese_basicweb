@@ -40,12 +40,12 @@ const Leaderboards = () => {
       className="w-full min-h-screen p-4 md:p-8"
     >
       {/* Page Heading */}
-      <h1 className="h1-style mb-8">Leaderboards</h1>
+      <h1 className="mb-8 h1-style">Bảng xếp hạng</h1>
 
       {/* Banner */}
-      <div className="mb-8 banner-container-style text-white text-shadow bg-gradient-to-r from-green-600 to-green-800">
-        <div className="relative p-8 z-10">
-          <h2 className="banner-heading mb-3">Rise to the top!</h2>
+      <div className="mb-8 text-white banner-container-style text-shadow bg-gradient-to-r from-teal-400 to-teal-600">
+        <div className="relative z-10 p-8">
+          <h2 className="mb-3 banner-heading">Dẫn đầu xu thế</h2>
           <p className="text-lg">Be the best and compete with others.</p>
         </div>
         <div className="banner-bg-style bg-connections" />
@@ -53,25 +53,25 @@ const Leaderboards = () => {
 
       {/* Leaderboard table */}
       <div className="box-container-style">
-        <h2 className="text-xl font-bold mb-4">Rankings</h2>
+        <h2 className="mb-4 text-xl font-bold">Rankings</h2>
         <div className="flex flex-col">
-          {loading && <AiOutlineLoading className="animate-spin h-12 w-12 mx-auto" />}
+          {loading && <AiOutlineLoading className="w-12 h-12 mx-auto animate-spin" />}
 
           {sortedUsers.map((user, index) => (
             <div
               key={`id-${user.username}`}
-              className="w-auto flex items-center p-2 px-4 gap-4 rounded-xl odd:bg-slate-900/5 dark:odd:bg-slate-900/50"
+              className="flex items-center w-auto gap-4 p-2 px-4 rounded-xl odd:bg-slate-900/5 dark:odd:bg-slate-900/50"
             >
               <span className={`ranking-index-style ${rank(index)}`}>{index + 1}</span>
               <div className="w-12 h-12 shrink-0">
-                <div className="w-12 h-12 bg-primary rounded-full flex justify-center items-center uppercase font-bold text-2xl text-white">
+                <div className="flex items-center justify-center w-12 h-12 text-2xl font-bold text-white uppercase rounded-full bg-primary">
                   {user.username?.charAt(0).toUpperCase()}
                 </div>
               </div>
 
               <div className="flex flex-col flex-grow overflow-hidden">
                 <h3 className="font-bold truncate">{user.username}</h3>
-                <p className="text-gray-500 dark:text-gray-400 truncate">{user.experience} XP</p>
+                <p className="text-gray-500 truncate dark:text-gray-400">{user.experience} XP</p>
               </div>
             </div>
           ))}

@@ -17,8 +17,8 @@ const Header = () => {
   const dispatch = useDispatch();
 
   return (
-    <header className="bg-white dark:bg-slate-800 border-b border-gray-100 dark:border-gray-900 z-50">
-      <nav className="mx-auto max-w-7xl flex items-center justify-between p-4 lg:px-8">
+    <header className="z-50 bg-white border-b border-gray-100 dark:bg-slate-800 dark:border-gray-900">
+      <nav className="flex items-center justify-between p-4 mx-auto max-w-7xl lg:px-8">
         {/* Logo image */}
         <Link
           to="/"
@@ -34,18 +34,18 @@ const Header = () => {
             <img
               src={logoTextDarkMode}
               alt="Sakura Study Text Logo"
-              className="w-auto h-6 hidden sm:inline-block"
+              className="hidden w-auto h-6 sm:inline-block"
             />
           ) : (
             <img
               src={logoText}
               alt="Sakura Study Text Logo"
-              className="w-auto h-6 hidden sm:inline-block"
+              className="hidden w-auto h-6 sm:inline-block"
             />
           )}
         </Link>
         {/* Log in and Sign Up Links and Dark Mode Toggle */}
-        <div className="flex items-center gap-2 sm:gap-4 font-bold">
+        <div className="flex items-center gap-2 font-bold sm:gap-4">
           {/* Toggle dark mode */}
           <button
             type="button"
@@ -64,15 +64,15 @@ const Header = () => {
           </button>
           <Link
             to="/login"
-            className="py-2 px-4 hover:text-primary-shade"
+            className="px-4 py-2 hover:text-primary-shade"
           >
-            Log in
+            Đăng nhập
           </Link>
           <Link
             to="/signup"
-            className="py-2 px-4 text-white bg-primary hover:bg-primary-shade rounded-xl"
+            className="px-4 py-2 text-white bg-primary hover:bg-primary-shade rounded-xl"
           >
-            Sign up
+            Đăng ký
           </Link>
         </div>
       </nav>
