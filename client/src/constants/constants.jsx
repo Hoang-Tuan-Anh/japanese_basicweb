@@ -5,22 +5,22 @@ import { FaGithub } from 'react-icons/fa';
 
 const sidebarNavItems = [
   {
-    title: 'Dashboard',
+    title: 'Trang chủ',
     path: '/dashboard',
     icon: <HiOutlineHome className="sidebar-btn-icon" />,
   },
   {
-    title: 'Characters',
+    title: 'Bảng chữ cái',
     path: '/characters',
     icon: <IoLanguage className="sidebar-btn-icon" />,
   },
   {
-    title: 'Leaderboards',
+    title: 'Bảng xếp hạng',
     path: '/leaderboards',
     icon: <MdOutlineLeaderboard className="sidebar-btn-icon" />,
   },
   {
-    title: 'Profile',
+    title: 'Trang cá nhân',
     path: '/profile',
     icon: <HiOutlineUserCircle className="sidebar-btn-icon" />,
   },
