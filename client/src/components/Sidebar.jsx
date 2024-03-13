@@ -26,7 +26,7 @@ const Sidebar = () => {
       {/* Logo */}
       <NavLink
         to="/dashboard"
-        className="w-fit xl:px-4 flex items-center gap-3 hover:opacity-70"
+        className="flex items-center gap-3 w-fit xl:px-4 hover:opacity-70"
       >
         <img
           src={logo}
@@ -50,7 +50,7 @@ const Sidebar = () => {
       </NavLink>
 
       {/* Navigation Links */}
-      <nav className="w-full mt-8 flex flex-col justify-between gap-2">
+      <nav className="flex flex-col justify-between w-full gap-2 mt-8">
         {sidebarNavItems.map((item) => (
           <NavLink
             key={item.title}
@@ -79,7 +79,7 @@ const Sidebar = () => {
           className="sidebar-btn"
         >
           <FiLogOut className="sidebar-btn-icon" />
-          <span className="sidebar-text">Log out</span>
+          <span className="sidebar-text">Đăng xuất</span>
         </button>
       </nav>
     </aside>
